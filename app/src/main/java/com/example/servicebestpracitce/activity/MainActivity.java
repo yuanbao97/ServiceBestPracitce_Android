@@ -1,12 +1,11 @@
 package com.example.servicebestpracitce.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 import com.example.servicebestpracitce.R;
+import com.example.servicebestpracitce.framework.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
