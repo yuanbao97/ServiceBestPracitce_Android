@@ -104,7 +104,7 @@ public class DownloadTask extends AsyncTask<String, Integer, Integer> {
     @Override
     protected void onProgressUpdate(Integer... values) {
         int progress = values[0];
-        if(progress >= 0) {
+        if(progress > lastProgress) {
             mListener.onProgress(progress);
             lastProgress = progress;
         }
