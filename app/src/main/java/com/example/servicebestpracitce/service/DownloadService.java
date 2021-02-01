@@ -95,7 +95,7 @@ public class DownloadService extends Service {
                 mDownloadTask.cancelDownload();
             }
             if(downloadUrl != null) {
-                String fileName = downloadUrl.substring(downloadUrl.lastIndexOf("/"));
+                String fileName = downloadUrl.substring(downloadUrl.lastIndexOf("/") + 1);
                 String directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();
                 File file = new File(directory + fileName);
                 if(file.exists()) {
